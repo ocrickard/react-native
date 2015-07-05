@@ -15,6 +15,9 @@
 #import "RCTSparseArray.h"
 #import "RCTText.h"
 #import "RCTUtils.h"
+#import "CKTextKitRendererCache.h"
+#import "CKTextComponentView.h"
+#import "CKTextKitRenderer.h"
 
 NSString *const RCTIsHighlightedAttributeName = @"IsHighlightedAttributeName";
 NSString *const RCTReactTagAttributeName = @"ReactTagAttributeName";
@@ -27,13 +30,39 @@ NSString *const RCTReactTagAttributeName = @"ReactTagAttributeName";
   CGFloat _effectiveLetterSpacing;
 }
 
+static CK::TextKit::Renderer::Cache *sharedRendererCache()
+{
+  // This cache is sized arbitrarily
+  static CK::TextKit::Renderer::Cache *__rendererCache (new CK::TextKit::Renderer::Cache("CKTextKitRendererCache", 500, 0.2));
+  return __rendererCache;
+}
+
+static CKTextKitRenderer *rendererForAttributes(const CKTextKitAttributes &attributes, CGSize constrainedSize)
+{
+  CK::TextKit::Renderer::Cache *cache = sharedRendererCache();
+  const CK::TextKit::Renderer::Key key {
+    attributes,
+    constrainedSize
+  };
+  
+  CKTextKitRenderer *renderer = cache->objectForKey(key);
+  
+  if (!renderer) {
+    renderer =
+    [[CKTextKitRenderer alloc]
+     initWithTextKitAttributes:attributes
+     constrainedSize:constrainedSize];
+    cache->cacheObject(key, renderer, 1);
+  }
+  
+  return renderer;
+}
+
 static css_dim_t RCTMeasure(void *context, float width)
 {
   RCTShadowText *shadowText = (__bridge RCTShadowText *)context;
-  NSTextStorage *textStorage = [shadowText buildTextStorageForWidth:width];
-  NSLayoutManager *layoutManager = [textStorage.layoutManagers firstObject];
-  NSTextContainer *textContainer = [layoutManager.textContainers firstObject];
-  CGSize computedSize = [layoutManager usedRectForTextContainer:textContainer].size;
+  CKTextKitRenderer *renderer = [shadowText rendererForSize:{ .width = width, .height = CGFLOAT_MAX }];
+  CGSize computedSize = renderer.size;
 
   css_dim_t result;
   result.dimensions[CSS_WIDTH] = RCTCeilPixelValue(computedSize.width);
@@ -65,11 +94,11 @@ static css_dim_t RCTMeasure(void *context, float width)
 {
   parentProperties = [super processUpdatedProperties:applierBlocks
                                     parentProperties:parentProperties];
-
-  NSTextStorage *textStorage = [self buildTextStorageForWidth:self.frame.size.width];
+  
+  CKTextKitRenderer *renderer = [self rendererForSize:self.frame.size];
   [applierBlocks addObject:^(RCTSparseArray *viewRegistry) {
-    RCTText *view = viewRegistry[self.reactTag];
-    view.textStorage = textStorage;
+    CKTextComponentView *view = viewRegistry[self.reactTag];
+    view.renderer = renderer;
   }];
 
   return parentProperties;
@@ -83,7 +112,21 @@ static css_dim_t RCTMeasure(void *context, float width)
   [self dirtyPropagation];
 }
 
-- (NSTextStorage *)buildTextStorageForWidth:(CGFloat)width
+- (const CKTextKitAttributes)attributes
+{
+  return {
+    .attributedString = self.attributedString,
+    .lineBreakMode = _numberOfLines > 0 ? NSLineBreakByTruncatingTail : NSLineBreakByClipping,
+    .maximumNumberOfLines = _numberOfLines
+  };
+}
+
+- (CKTextKitRenderer *)rendererForSize:(CGSize)constrainedSize
+{
+  return rendererForAttributes([self attributes], constrainedSize);
+}
+
+- (NSTextStorage *)deprecated_buildTextStorageForWidth:(CGFloat)width
 {
   UIEdgeInsets padding = self.paddingAsInsets;
   width -= (padding.left + padding.right);
@@ -238,8 +281,8 @@ static css_dim_t RCTMeasure(void *context, float width)
     }
   }];
 
-  self.textAlign = _textAlign ?: NSTextAlignmentNatural;
-  self.writingDirection = _writingDirection ?: NSWritingDirectionNatural;
+  self.textAlign = (NSTextAlignment)(_textAlign ?: NSTextAlignmentNatural);
+  self.writingDirection = (NSWritingDirection)(_writingDirection ?: NSWritingDirectionNatural);
 
   // if we found anything, set it :D
   if (hasParagraphStyle) {

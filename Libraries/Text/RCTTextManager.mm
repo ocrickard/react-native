@@ -17,6 +17,7 @@
 #import "RCTSparseArray.h"
 #import "RCTText.h"
 #import "UIView+React.h"
+#import "CKTextComponentView.h"
 
 @implementation RCTTextManager
 
@@ -24,7 +25,9 @@ RCT_EXPORT_MODULE()
 
 - (UIView *)view
 {
-  return [[RCTText alloc] init];
+  CKTextComponentView *view = [[CKTextComponentView alloc] init];
+//  view.enabled = NO;
+  return view;
 }
 
 - (RCTShadowView *)shadowView
@@ -87,12 +90,12 @@ RCT_EXPORT_SHADOW_PROPERTY(numberOfLines, NSUInteger)
 
 - (RCTViewManagerUIBlock)uiBlockToAmendWithShadowView:(RCTShadowText *)shadowView
 {
-  NSNumber *reactTag = shadowView.reactTag;
-  UIEdgeInsets padding = shadowView.paddingAsInsets;
+//  NSNumber *reactTag = shadowView.reactTag;
+//  UIEdgeInsets padding = shadowView.paddingAsInsets;
 
   return ^(RCTUIManager *uiManager, RCTSparseArray *viewRegistry) {
-    RCTText *text = viewRegistry[reactTag];
-    text.contentInset = padding;
+    //CKTextComponentView *text = viewRegistry[reactTag];
+    //TODO: text.contentInset = padding;
   };
 }
 

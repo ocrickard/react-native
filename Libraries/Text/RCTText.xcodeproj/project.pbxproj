@@ -11,9 +11,29 @@
 		131B6AC11AF0CD0600FFC3E0 /* RCTTextViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 131B6ABF1AF0CD0600FFC3E0 /* RCTTextViewManager.m */; };
 		58B511CE1A9E6C5C00147676 /* RCTRawTextManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B511C71A9E6C5C00147676 /* RCTRawTextManager.m */; };
 		58B511CF1A9E6C5C00147676 /* RCTShadowRawText.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B511C91A9E6C5C00147676 /* RCTShadowRawText.m */; };
-		58B511D01A9E6C5C00147676 /* RCTShadowText.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B511CB1A9E6C5C00147676 /* RCTShadowText.m */; };
-		58B511D11A9E6C5C00147676 /* RCTTextManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B511CD1A9E6C5C00147676 /* RCTTextManager.m */; };
+		58B511D01A9E6C5C00147676 /* RCTShadowText.mm in Sources */ = {isa = PBXBuildFile; fileRef = 58B511CB1A9E6C5C00147676 /* RCTShadowText.mm */; };
+		58B511D11A9E6C5C00147676 /* RCTTextManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 58B511CD1A9E6C5C00147676 /* RCTTextManager.mm */; };
 		58B512161A9E6EFF00147676 /* RCTText.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B512141A9E6EFF00147676 /* RCTText.m */; };
+		B1C5065C1B4992A500F3D31B /* CKTextComponentView+ReactNative.mm in Sources */ = {isa = PBXBuildFile; fileRef = B1C5065B1B4992A500F3D31B /* CKTextComponentView+ReactNative.mm */; };
+		B1F1C55C1B48789F00984AE7 /* CKTextComponentLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = B1F1C5531B48789F00984AE7 /* CKTextComponentLayer.mm */; };
+		B1F1C55D1B48789F00984AE7 /* CKTextComponentLayerHighlighter.mm in Sources */ = {isa = PBXBuildFile; fileRef = B1F1C5551B48789F00984AE7 /* CKTextComponentLayerHighlighter.mm */; };
+		B1F1C55E1B48789F00984AE7 /* CKTextComponentView.mm in Sources */ = {isa = PBXBuildFile; fileRef = B1F1C5571B48789F00984AE7 /* CKTextComponentView.mm */; };
+		B1F1C55F1B48789F00984AE7 /* CKTextComponentViewControlTracker.mm in Sources */ = {isa = PBXBuildFile; fileRef = B1F1C5591B48789F00984AE7 /* CKTextComponentViewControlTracker.mm */; };
+		B1F1C5731B4878ED00984AE7 /* CKTextKitAttributes.mm in Sources */ = {isa = PBXBuildFile; fileRef = B1F1C5611B4878ED00984AE7 /* CKTextKitAttributes.mm */; };
+		B1F1C5741B4878ED00984AE7 /* CKTextKitContext.mm in Sources */ = {isa = PBXBuildFile; fileRef = B1F1C5631B4878ED00984AE7 /* CKTextKitContext.mm */; };
+		B1F1C5751B4878ED00984AE7 /* CKTextKitEntityAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F1C5651B4878ED00984AE7 /* CKTextKitEntityAttribute.m */; };
+		B1F1C5761B4878ED00984AE7 /* CKTextKitRenderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = B1F1C5671B4878ED00984AE7 /* CKTextKitRenderer.mm */; };
+		B1F1C5771B4878ED00984AE7 /* CKTextKitRenderer+Positioning.mm in Sources */ = {isa = PBXBuildFile; fileRef = B1F1C5691B4878ED00984AE7 /* CKTextKitRenderer+Positioning.mm */; };
+		B1F1C5781B4878ED00984AE7 /* CKTextKitRenderer+TextChecking.mm in Sources */ = {isa = PBXBuildFile; fileRef = B1F1C56B1B4878ED00984AE7 /* CKTextKitRenderer+TextChecking.mm */; };
+		B1F1C5791B4878ED00984AE7 /* CKTextKitRendererCache.mm in Sources */ = {isa = PBXBuildFile; fileRef = B1F1C56D1B4878ED00984AE7 /* CKTextKitRendererCache.mm */; };
+		B1F1C57A1B4878ED00984AE7 /* CKTextKitShadower.mm in Sources */ = {isa = PBXBuildFile; fileRef = B1F1C56F1B4878ED00984AE7 /* CKTextKitShadower.mm */; };
+		B1F1C57B1B4878ED00984AE7 /* CKTextKitTailTruncater.mm in Sources */ = {isa = PBXBuildFile; fileRef = B1F1C5711B4878ED00984AE7 /* CKTextKitTailTruncater.mm */; };
+		B1F1C58D1B4878F700984AE7 /* CKAsyncLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = B1F1C57D1B4878F700984AE7 /* CKAsyncLayer.mm */; };
+		B1F1C58E1B4878F700984AE7 /* CKAsyncTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F1C5811B4878F700984AE7 /* CKAsyncTransaction.m */; };
+		B1F1C5901B4878F700984AE7 /* CKAsyncTransactionContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F1C5841B4878F700984AE7 /* CKAsyncTransactionContainer.m */; };
+		B1F1C5911B4878F700984AE7 /* CKAsyncTransactionGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F1C5871B4878F700984AE7 /* CKAsyncTransactionGroup.m */; };
+		B1F1C5931B4878F700984AE7 /* CKHighlightOverlayLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = B1F1C58C1B4878F700984AE7 /* CKHighlightOverlayLayer.mm */; };
+		B1F1C5A31B48DCFF00984AE7 /* CKInternalHelpers.mm in Sources */ = {isa = PBXBuildFile; fileRef = B1F1C5A21B48DCFF00984AE7 /* CKInternalHelpers.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,11 +59,58 @@
 		58B511C81A9E6C5C00147676 /* RCTShadowRawText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTShadowRawText.h; sourceTree = "<group>"; };
 		58B511C91A9E6C5C00147676 /* RCTShadowRawText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTShadowRawText.m; sourceTree = "<group>"; };
 		58B511CA1A9E6C5C00147676 /* RCTShadowText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTShadowText.h; sourceTree = "<group>"; };
-		58B511CB1A9E6C5C00147676 /* RCTShadowText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTShadowText.m; sourceTree = "<group>"; };
+		58B511CB1A9E6C5C00147676 /* RCTShadowText.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RCTShadowText.mm; sourceTree = "<group>"; };
 		58B511CC1A9E6C5C00147676 /* RCTTextManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTTextManager.h; sourceTree = "<group>"; };
-		58B511CD1A9E6C5C00147676 /* RCTTextManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTTextManager.m; sourceTree = "<group>"; };
+		58B511CD1A9E6C5C00147676 /* RCTTextManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RCTTextManager.mm; sourceTree = "<group>"; };
 		58B512141A9E6EFF00147676 /* RCTText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTText.m; sourceTree = "<group>"; };
 		58B512151A9E6EFF00147676 /* RCTText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTText.h; sourceTree = "<group>"; };
+		B1C5065A1B4992A500F3D31B /* CKTextComponentView+ReactNative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CKTextComponentView+ReactNative.h"; sourceTree = "<group>"; };
+		B1C5065B1B4992A500F3D31B /* CKTextComponentView+ReactNative.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "CKTextComponentView+ReactNative.mm"; sourceTree = "<group>"; };
+		B1F1C5521B48789F00984AE7 /* CKTextComponentLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKTextComponentLayer.h; sourceTree = "<group>"; };
+		B1F1C5531B48789F00984AE7 /* CKTextComponentLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CKTextComponentLayer.mm; sourceTree = "<group>"; };
+		B1F1C5541B48789F00984AE7 /* CKTextComponentLayerHighlighter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKTextComponentLayerHighlighter.h; sourceTree = "<group>"; };
+		B1F1C5551B48789F00984AE7 /* CKTextComponentLayerHighlighter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CKTextComponentLayerHighlighter.mm; sourceTree = "<group>"; };
+		B1F1C5561B48789F00984AE7 /* CKTextComponentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKTextComponentView.h; sourceTree = "<group>"; };
+		B1F1C5571B48789F00984AE7 /* CKTextComponentView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CKTextComponentView.mm; sourceTree = "<group>"; };
+		B1F1C5581B48789F00984AE7 /* CKTextComponentViewControlTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKTextComponentViewControlTracker.h; sourceTree = "<group>"; };
+		B1F1C5591B48789F00984AE7 /* CKTextComponentViewControlTracker.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CKTextComponentViewControlTracker.mm; sourceTree = "<group>"; };
+		B1F1C55A1B48789F00984AE7 /* CKTextComponentViewInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKTextComponentViewInternal.h; sourceTree = "<group>"; };
+		B1F1C5601B4878ED00984AE7 /* CKTextKitAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKTextKitAttributes.h; sourceTree = "<group>"; };
+		B1F1C5611B4878ED00984AE7 /* CKTextKitAttributes.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CKTextKitAttributes.mm; sourceTree = "<group>"; };
+		B1F1C5621B4878ED00984AE7 /* CKTextKitContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKTextKitContext.h; sourceTree = "<group>"; };
+		B1F1C5631B4878ED00984AE7 /* CKTextKitContext.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CKTextKitContext.mm; sourceTree = "<group>"; };
+		B1F1C5641B4878ED00984AE7 /* CKTextKitEntityAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKTextKitEntityAttribute.h; sourceTree = "<group>"; };
+		B1F1C5651B4878ED00984AE7 /* CKTextKitEntityAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKTextKitEntityAttribute.m; sourceTree = "<group>"; };
+		B1F1C5661B4878ED00984AE7 /* CKTextKitRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKTextKitRenderer.h; sourceTree = "<group>"; };
+		B1F1C5671B4878ED00984AE7 /* CKTextKitRenderer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CKTextKitRenderer.mm; sourceTree = "<group>"; };
+		B1F1C5681B4878ED00984AE7 /* CKTextKitRenderer+Positioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CKTextKitRenderer+Positioning.h"; sourceTree = "<group>"; };
+		B1F1C5691B4878ED00984AE7 /* CKTextKitRenderer+Positioning.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "CKTextKitRenderer+Positioning.mm"; sourceTree = "<group>"; };
+		B1F1C56A1B4878ED00984AE7 /* CKTextKitRenderer+TextChecking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CKTextKitRenderer+TextChecking.h"; sourceTree = "<group>"; };
+		B1F1C56B1B4878ED00984AE7 /* CKTextKitRenderer+TextChecking.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "CKTextKitRenderer+TextChecking.mm"; sourceTree = "<group>"; };
+		B1F1C56C1B4878ED00984AE7 /* CKTextKitRendererCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKTextKitRendererCache.h; sourceTree = "<group>"; };
+		B1F1C56D1B4878ED00984AE7 /* CKTextKitRendererCache.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CKTextKitRendererCache.mm; sourceTree = "<group>"; };
+		B1F1C56E1B4878ED00984AE7 /* CKTextKitShadower.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKTextKitShadower.h; sourceTree = "<group>"; };
+		B1F1C56F1B4878ED00984AE7 /* CKTextKitShadower.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CKTextKitShadower.mm; sourceTree = "<group>"; };
+		B1F1C5701B4878ED00984AE7 /* CKTextKitTailTruncater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKTextKitTailTruncater.h; sourceTree = "<group>"; };
+		B1F1C5711B4878ED00984AE7 /* CKTextKitTailTruncater.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CKTextKitTailTruncater.mm; sourceTree = "<group>"; };
+		B1F1C5721B4878ED00984AE7 /* CKTextKitTruncating.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKTextKitTruncating.h; sourceTree = "<group>"; };
+		B1F1C57C1B4878F700984AE7 /* CKAsyncLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKAsyncLayer.h; sourceTree = "<group>"; };
+		B1F1C57D1B4878F700984AE7 /* CKAsyncLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CKAsyncLayer.mm; sourceTree = "<group>"; };
+		B1F1C57E1B4878F700984AE7 /* CKAsyncLayerInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKAsyncLayerInternal.h; sourceTree = "<group>"; };
+		B1F1C57F1B4878F700984AE7 /* CKAsyncLayerSubclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKAsyncLayerSubclass.h; sourceTree = "<group>"; };
+		B1F1C5801B4878F700984AE7 /* CKAsyncTransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKAsyncTransaction.h; sourceTree = "<group>"; };
+		B1F1C5811B4878F700984AE7 /* CKAsyncTransaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKAsyncTransaction.m; sourceTree = "<group>"; };
+		B1F1C5831B4878F700984AE7 /* CKAsyncTransactionContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKAsyncTransactionContainer.h; sourceTree = "<group>"; };
+		B1F1C5841B4878F700984AE7 /* CKAsyncTransactionContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKAsyncTransactionContainer.m; sourceTree = "<group>"; };
+		B1F1C5851B4878F700984AE7 /* CKAsyncTransactionContainer+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CKAsyncTransactionContainer+Private.h"; sourceTree = "<group>"; };
+		B1F1C5861B4878F700984AE7 /* CKAsyncTransactionGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKAsyncTransactionGroup.h; sourceTree = "<group>"; };
+		B1F1C5871B4878F700984AE7 /* CKAsyncTransactionGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKAsyncTransactionGroup.m; sourceTree = "<group>"; };
+		B1F1C5891B4878F700984AE7 /* CKCacheImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKCacheImpl.h; sourceTree = "<group>"; };
+		B1F1C58A1B4878F700984AE7 /* CKFunctor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKFunctor.h; sourceTree = "<group>"; };
+		B1F1C58B1B4878F700984AE7 /* CKHighlightOverlayLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKHighlightOverlayLayer.h; sourceTree = "<group>"; };
+		B1F1C58C1B4878F700984AE7 /* CKHighlightOverlayLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CKHighlightOverlayLayer.mm; sourceTree = "<group>"; };
+		B1F1C5941B487AF800984AE7 /* CKInternalHelpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CKInternalHelpers.h; sourceTree = "<group>"; };
+		B1F1C5A21B48DCFF00984AE7 /* CKInternalHelpers.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CKInternalHelpers.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,16 +127,17 @@
 		58B511921A9E6C1200147676 = {
 			isa = PBXGroup;
 			children = (
+				B1F1C54D1B48644200984AE7 /* TextKit */,
 				58B511C61A9E6C5C00147676 /* RCTRawTextManager.h */,
 				58B511C71A9E6C5C00147676 /* RCTRawTextManager.m */,
 				58B511C81A9E6C5C00147676 /* RCTShadowRawText.h */,
 				58B511C91A9E6C5C00147676 /* RCTShadowRawText.m */,
 				58B511CA1A9E6C5C00147676 /* RCTShadowText.h */,
-				58B511CB1A9E6C5C00147676 /* RCTShadowText.m */,
+				58B511CB1A9E6C5C00147676 /* RCTShadowText.mm */,
 				58B512151A9E6EFF00147676 /* RCTText.h */,
 				58B512141A9E6EFF00147676 /* RCTText.m */,
 				58B511CC1A9E6C5C00147676 /* RCTTextManager.h */,
-				58B511CD1A9E6C5C00147676 /* RCTTextManager.m */,
+				58B511CD1A9E6C5C00147676 /* RCTTextManager.mm */,
 				131B6ABC1AF0CD0600FFC3E0 /* RCTTextView.h */,
 				131B6ABD1AF0CD0600FFC3E0 /* RCTTextView.m */,
 				131B6ABE1AF0CD0600FFC3E0 /* RCTTextViewManager.h */,
@@ -86,6 +154,76 @@
 				58B5119B1A9E6C1200147676 /* libRCTText.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		B1F1C54D1B48644200984AE7 /* TextKit */ = {
+			isa = PBXGroup;
+			children = (
+				B1F1C5521B48789F00984AE7 /* CKTextComponentLayer.h */,
+				B1F1C5531B48789F00984AE7 /* CKTextComponentLayer.mm */,
+				B1F1C5541B48789F00984AE7 /* CKTextComponentLayerHighlighter.h */,
+				B1F1C5551B48789F00984AE7 /* CKTextComponentLayerHighlighter.mm */,
+				B1F1C5561B48789F00984AE7 /* CKTextComponentView.h */,
+				B1F1C5571B48789F00984AE7 /* CKTextComponentView.mm */,
+				B1C5065A1B4992A500F3D31B /* CKTextComponentView+ReactNative.h */,
+				B1C5065B1B4992A500F3D31B /* CKTextComponentView+ReactNative.mm */,
+				B1F1C5581B48789F00984AE7 /* CKTextComponentViewControlTracker.h */,
+				B1F1C5591B48789F00984AE7 /* CKTextComponentViewControlTracker.mm */,
+				B1F1C55A1B48789F00984AE7 /* CKTextComponentViewInternal.h */,
+				B1F1C54F1B48645B00984AE7 /* Utility */,
+				B1F1C54E1B48645200984AE7 /* Core */,
+			);
+			path = TextKit;
+			sourceTree = "<group>";
+		};
+		B1F1C54E1B48645200984AE7 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B1F1C5601B4878ED00984AE7 /* CKTextKitAttributes.h */,
+				B1F1C5611B4878ED00984AE7 /* CKTextKitAttributes.mm */,
+				B1F1C5621B4878ED00984AE7 /* CKTextKitContext.h */,
+				B1F1C5631B4878ED00984AE7 /* CKTextKitContext.mm */,
+				B1F1C5641B4878ED00984AE7 /* CKTextKitEntityAttribute.h */,
+				B1F1C5651B4878ED00984AE7 /* CKTextKitEntityAttribute.m */,
+				B1F1C5661B4878ED00984AE7 /* CKTextKitRenderer.h */,
+				B1F1C5671B4878ED00984AE7 /* CKTextKitRenderer.mm */,
+				B1F1C5681B4878ED00984AE7 /* CKTextKitRenderer+Positioning.h */,
+				B1F1C5691B4878ED00984AE7 /* CKTextKitRenderer+Positioning.mm */,
+				B1F1C56A1B4878ED00984AE7 /* CKTextKitRenderer+TextChecking.h */,
+				B1F1C56B1B4878ED00984AE7 /* CKTextKitRenderer+TextChecking.mm */,
+				B1F1C56C1B4878ED00984AE7 /* CKTextKitRendererCache.h */,
+				B1F1C56D1B4878ED00984AE7 /* CKTextKitRendererCache.mm */,
+				B1F1C56E1B4878ED00984AE7 /* CKTextKitShadower.h */,
+				B1F1C56F1B4878ED00984AE7 /* CKTextKitShadower.mm */,
+				B1F1C5701B4878ED00984AE7 /* CKTextKitTailTruncater.h */,
+				B1F1C5711B4878ED00984AE7 /* CKTextKitTailTruncater.mm */,
+				B1F1C5721B4878ED00984AE7 /* CKTextKitTruncating.h */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		B1F1C54F1B48645B00984AE7 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				B1F1C5941B487AF800984AE7 /* CKInternalHelpers.h */,
+				B1F1C5A21B48DCFF00984AE7 /* CKInternalHelpers.mm */,
+				B1F1C57C1B4878F700984AE7 /* CKAsyncLayer.h */,
+				B1F1C57D1B4878F700984AE7 /* CKAsyncLayer.mm */,
+				B1F1C57E1B4878F700984AE7 /* CKAsyncLayerInternal.h */,
+				B1F1C57F1B4878F700984AE7 /* CKAsyncLayerSubclass.h */,
+				B1F1C5801B4878F700984AE7 /* CKAsyncTransaction.h */,
+				B1F1C5811B4878F700984AE7 /* CKAsyncTransaction.m */,
+				B1F1C5831B4878F700984AE7 /* CKAsyncTransactionContainer.h */,
+				B1F1C5841B4878F700984AE7 /* CKAsyncTransactionContainer.m */,
+				B1F1C5851B4878F700984AE7 /* CKAsyncTransactionContainer+Private.h */,
+				B1F1C5861B4878F700984AE7 /* CKAsyncTransactionGroup.h */,
+				B1F1C5871B4878F700984AE7 /* CKAsyncTransactionGroup.m */,
+				B1F1C5891B4878F700984AE7 /* CKCacheImpl.h */,
+				B1F1C58A1B4878F700984AE7 /* CKFunctor.h */,
+				B1F1C58B1B4878F700984AE7 /* CKHighlightOverlayLayer.h */,
+				B1F1C58C1B4878F700984AE7 /* CKHighlightOverlayLayer.mm */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,13 +282,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58B511D11A9E6C5C00147676 /* RCTTextManager.m in Sources */,
+				B1F1C55C1B48789F00984AE7 /* CKTextComponentLayer.mm in Sources */,
+				B1F1C55D1B48789F00984AE7 /* CKTextComponentLayerHighlighter.mm in Sources */,
+				B1F1C55E1B48789F00984AE7 /* CKTextComponentView.mm in Sources */,
+				B1F1C55F1B48789F00984AE7 /* CKTextComponentViewControlTracker.mm in Sources */,
+				B1F1C5A31B48DCFF00984AE7 /* CKInternalHelpers.mm in Sources */,
+				B1F1C58D1B4878F700984AE7 /* CKAsyncLayer.mm in Sources */,
+				B1F1C58E1B4878F700984AE7 /* CKAsyncTransaction.m in Sources */,
+				B1F1C5901B4878F700984AE7 /* CKAsyncTransactionContainer.m in Sources */,
+				B1F1C5911B4878F700984AE7 /* CKAsyncTransactionGroup.m in Sources */,
+				B1F1C5931B4878F700984AE7 /* CKHighlightOverlayLayer.mm in Sources */,
+				B1F1C5731B4878ED00984AE7 /* CKTextKitAttributes.mm in Sources */,
+				B1F1C5741B4878ED00984AE7 /* CKTextKitContext.mm in Sources */,
+				B1F1C5751B4878ED00984AE7 /* CKTextKitEntityAttribute.m in Sources */,
+				B1F1C5761B4878ED00984AE7 /* CKTextKitRenderer.mm in Sources */,
+				B1F1C5771B4878ED00984AE7 /* CKTextKitRenderer+Positioning.mm in Sources */,
+				B1F1C5781B4878ED00984AE7 /* CKTextKitRenderer+TextChecking.mm in Sources */,
+				B1F1C5791B4878ED00984AE7 /* CKTextKitRendererCache.mm in Sources */,
+				B1F1C57A1B4878ED00984AE7 /* CKTextKitShadower.mm in Sources */,
+				B1F1C57B1B4878ED00984AE7 /* CKTextKitTailTruncater.mm in Sources */,
+				58B511D11A9E6C5C00147676 /* RCTTextManager.mm in Sources */,
 				131B6AC01AF0CD0600FFC3E0 /* RCTTextView.m in Sources */,
 				58B511CE1A9E6C5C00147676 /* RCTRawTextManager.m in Sources */,
 				58B512161A9E6EFF00147676 /* RCTText.m in Sources */,
+				B1C5065C1B4992A500F3D31B /* CKTextComponentView+ReactNative.mm in Sources */,
 				131B6AC11AF0CD0600FFC3E0 /* RCTTextViewManager.m in Sources */,
 				58B511CF1A9E6C5C00147676 /* RCTShadowRawText.m in Sources */,
-				58B511D01A9E6C5C00147676 /* RCTShadowText.m in Sources */,
+				58B511D01A9E6C5C00147676 /* RCTShadowText.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,13 +402,19 @@
 		58B511B01A9E6C1300147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_STATIC_ANALYZER_MODE = deep;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../React/**",
 				);
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+					"-lstdc++",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SKIP_INSTALL = YES;
@@ -260,13 +424,19 @@
 		58B511B11A9E6C1300147676 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_STATIC_ANALYZER_MODE = deep;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../React/**",
 				);
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+					"-lstdc++",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
